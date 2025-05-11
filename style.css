@@ -19,6 +19,7 @@ html {
   body {
     align-items: center;
     justify-content: center;
+    font-family: "Poppins", sans-serif;
   }
 
   footer {
@@ -40,23 +41,39 @@ html {
     display: inline-block;
     font-size: 16px;
   }
-/* 
-  .popup {
-    position: fixed;
-    top: 30%;
-    left: 50%;
-    transform: translate(-50%, -30%);
+  /* Flexbox for pesticide testing. */
+  .flex-container { display : flex; }
+  .card { 
+                  background : blue;
+                  border : 30px solid white;
+                  height : 100px;
+                  flex : 1;
+              }
+  .first { flex : 2; }
+  .second { flex : 0.5; }
+
+  /* Swiss flag */
+  .red-box { 
+    background-color: red;
+    width: 200px;
+    height: 200px;
+    position : relative;
+    margin : 100px;
+}
+.vert-white {
     background-color: white;
-    padding: 20px;
-    border: 2px solid black;
-    box-shadow: 0 0 10px rgba(0,0,0,0.3);
-    z-index: 1000;
-    display: none;
-  }
-  
-  .popup button {
-    margin-top: 10px;
-    cursor: pointer;
-  }
-   */
+    height : 100px;
+    width : 33.3px;
+    position: absolute;
+    top : 50px;
+    left : 83.5px;
+}
+.hor-white {
+    background-color: white;
+    height : 33.3px;
+    width: 100px;
+    position: absolute;
+    top : 83.5px;
+    left : 50px;
+}
   
